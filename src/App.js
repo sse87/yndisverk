@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import AppBar from './components/AppBar'
 
+import useLocalStorage from './misc/useLocalStorage'
 import { getSelection, mapMenu } from './misc/utilities'
 import { menu, people } from './misc/data'
 
@@ -9,7 +10,8 @@ import { menu, people } from './misc/data'
 const weekDays = 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_')
 
 const App = () => {
-  const [person, setPerson] = useState(null)
+  const [person, setPerson] = useLocalStorage('person', null)
+
   const date = new Date()
   // if it's mon, tue, wed or thu then find menu index, otherwise null
   const todayIndex = (date.getDay() >= 1 && date.getDay() <= 4) ? (date.getDay() - 1) : null
