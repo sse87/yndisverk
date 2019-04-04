@@ -1,8 +1,8 @@
 {
-  "name": "yndisauki",
-  "version": "0.1.0",
+  "name": "matverk",
+  "version": "1.0.0",
   "private": true,
-  "homepage": "https://sse87.github.io/yndisverk",
+  "homepage": "https://sse87.github.io/matverk",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "react": "^16.8.5",
