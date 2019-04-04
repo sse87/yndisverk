@@ -1,15 +1,15 @@
 {
-  "main.css": "/yndisverk/static/css/main.e1bef198.chunk.css",
-  "main.js": "/yndisverk/static/js/main.a83b5da4.chunk.js",
-  "main.js.map": "/yndisverk/static/js/main.a83b5da4.chunk.js.map",
-  "runtime~main.js": "/yndisverk/static/js/runtime~main.9e397a46.js",
-  "runtime~main.js.map": "/yndisverk/static/js/runtime~main.9e397a46.js.map",
-  "static/css/2.0167ffe0.chunk.css": "/yndisverk/static/css/2.0167ffe0.chunk.css",
-  "static/js/2.a0e3560b.chunk.js": "/yndisverk/static/js/2.a0e3560b.chunk.js",
-  "static/js/2.a0e3560b.chunk.js.map": "/yndisverk/static/js/2.a0e3560b.chunk.js.map",
-  "index.html": "/yndisverk/index.html",
-  "precache-manifest.18fc8309d1756b0f32a1e28944d3520e.js": "/yndisverk/precache-manifest.18fc8309d1756b0f32a1e28944d3520e.js",
-  "service-worker.js": "/yndisverk/service-worker.js",
-  "static/css/2.0167ffe0.chunk.css.map": "/yndisverk/static/css/2.0167ffe0.chunk.css.map",
-  "static/css/main.e1bef198.chunk.css.map": "/yndisverk/static/css/main.e1bef198.chunk.css.map"
+  "main.css": "/matverk/static/css/main.936b2ed4.chunk.css",
+  "main.js": "/matverk/static/js/main.f59ded0e.chunk.js",
+  "main.js.map": "/matverk/static/js/main.f59ded0e.chunk.js.map",
+  "runtime~main.js": "/matverk/static/js/runtime~main.bd13b066.js",
+  "runtime~main.js.map": "/matverk/static/js/runtime~main.bd13b066.js.map",
+  "static/css/2.60d99035.chunk.css": "/matverk/static/css/2.60d99035.chunk.css",
+  "static/js/2.a0e3560b.chunk.js": "/matverk/static/js/2.a0e3560b.chunk.js",
+  "static/js/2.a0e3560b.chunk.js.map": "/matverk/static/js/2.a0e3560b.chunk.js.map",
+  "index.html": "/matverk/index.html",
+  "precache-manifest.d10773122773df4a4e4fb7391c2b993e.js": "/matverk/precache-manifest.d10773122773df4a4e4fb7391c2b993e.js",
+  "service-worker.js": "/matverk/service-worker.js",
+  "static/css/2.60d99035.chunk.css.map": "/matverk/static/css/2.60d99035.chunk.css.map",
+  "static/css/main.936b2ed4.chunk.css.map": "/matverk/static/css/main.936b2ed4.chunk.css.map"
 }
