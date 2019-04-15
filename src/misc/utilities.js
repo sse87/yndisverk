@@ -14,7 +14,8 @@ export const mapMenu = (menu, targetSel) => {
 export const validate = (person, menu) => {
   console.log('validate() - person:', person)
   return person.selection.every((sel, i) => {
-    if (sel === null) return true
+    // Sel is always a string because null is converted to 'null' in mapMenu function
+    if (sel === 'null') return true
     // This check if current selection is on the menu
     return Object.values(menu[i]).some(day => day === sel)
   })
