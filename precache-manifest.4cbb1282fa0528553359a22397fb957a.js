@@ -4,23 +4,23 @@ self.__precacheManifest = [
     "url": "/matverk/static/js/runtime~main.bd13b066.js"
   },
   {
-    "revision": "97a543d5955542ba33d2",
-    "url": "/matverk/static/js/main.bca8271b.chunk.js"
+    "revision": "15071673b8bc29b8b42e",
+    "url": "/matverk/static/js/main.1aee9d53.chunk.js"
   },
   {
-    "revision": "c506a71524a8837c9367",
-    "url": "/matverk/static/js/2.a0e3560b.chunk.js"
+    "revision": "e230d2484d5600968a49",
+    "url": "/matverk/static/js/2.bc0b6b34.chunk.js"
   },
   {
-    "revision": "97a543d5955542ba33d2",
+    "revision": "15071673b8bc29b8b42e",
     "url": "/matverk/static/css/main.936b2ed4.chunk.css"
   },
   {
-    "revision": "c506a71524a8837c9367",
+    "revision": "e230d2484d5600968a49",
     "url": "/matverk/static/css/2.60d99035.chunk.css"
   },
   {
-    "revision": "4c2b05615f0a862bdfb04e95788d0f3d",
+    "revision": "f6c14b6efd2ac3627ecb1c7bea3df878",
     "url": "/matverk/index.html"
   }
 ];
