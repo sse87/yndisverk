@@ -10,11 +10,12 @@ The site is live here: https://sse87.github.io/matverk/
 * Select your name and see what meal you have selected for the week
 * Current weekday is highlighted
 * "Login" is saved to localStorage so the site will remember you
+* PWA ready (it works offline and it will ask to install when running on mobile devices)
+* When running an old version, app will show message about the new version
+* Add statistics on your selection
 
 ## Next
-
-* PWA ready
-* Add "new version available" message until user will "turn off and on again"
+* Implement login via gmail with firebase api
 
 ## Contributing
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { getSelection, mapMenu } from '../misc/utilities'
+import { getSelection, addStats, mapMenu } from '../misc/utilities'
 import { menu, people } from '../misc/data'
 
 const SignInPage = ({ setPerson }) => {
@@ -15,7 +15,7 @@ const SignInPage = ({ setPerson }) => {
               className='form-control'
               id='whoIsThis'
               // Magic oneliner, further description is commented above func assessment
-              onChange={e => setPerson(mapMenu(menu, getSelection(people, e.target.value)))}
+              onChange={e => setPerson(mapMenu(menu, addStats(people, getSelection(people, e.target.value))))}
             >
               <option />
               {people.map(person => (
