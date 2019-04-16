@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/matverk/precache-manifest.530aa0b4236323c7f93ad3542235488b.js"
+  "/matverk/precache-manifest.43f37eff7b6908a2414e7585bba724cd.js"
 );
 
 workbox.clientsClaim();
