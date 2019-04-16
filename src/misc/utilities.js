@@ -9,6 +9,28 @@ export const mapMenu = (menu, targetSel) => {
   return { ...targetSel, selection }
 }
 
+const getDistributions = (people) => {
+  const stats = Array(4).fill({ a: 0, b: 0, c: 0, d: 0, e: 0, null: 0, sum: 0 })
+  people.forEach(item => {
+    item.selection.forEach((sel, i) => {
+      if (sel === 'a') stats[i] = { ...stats[i], a: (stats[i].a + 1), sum: (stats[i].sum + 1) }
+      else if (sel === 'b') stats[i] = { ...stats[i], b: (stats[i].b + 1), sum: (stats[i].sum + 1) }
+      else if (sel === 'c') stats[i] = { ...stats[i], c: (stats[i].c + 1), sum: (stats[i].sum + 1) }
+      else if (sel === 'd') stats[i] = { ...stats[i], d: (stats[i].d + 1), sum: (stats[i].sum + 1) }
+      else if (sel === 'e') stats[i] = { ...stats[i], e: (stats[i].e + 1), sum: (stats[i].sum + 1) }
+      else if (sel === null) stats[i] = { ...stats[i], null: (stats[i].null + 1), sum: (stats[i].sum + 1) }
+    })
+  })
+
+  return stats
+}
+
+export const addStats = (people, targetSel) => {
+  const dist = getDistributions(people)
+  const statistics = targetSel.selection.map((sel, i) => sel === null ? dist[i].null / dist[i].sum : dist[i][sel] / dist[i].sum)
+  return { ...targetSel, statistics }
+}
+
 // Validate persons mapped menu to current menu, go through every selection and check if every day is part of the menu
 // Because person mapped data is stored in localStorage so it can be expired
 export const validate = (person, menu) => {
@@ -52,4 +74,9 @@ const greetings = ['Hi', 'Hello', 'Hey', 'Good to see you', 'Nice to see you']
 export const getRandomGreeting = () => {
   greetings.push(getTimeBasedGreeting())
   return getRandomItem(greetings)
+}
+
+export const renderPercentage = (x, digits = 2) => {
+  if (isNaN(x) || x === null) return ''
+  return `${Number.parseFloat(x * 100).toFixed(digits)}%`
 }

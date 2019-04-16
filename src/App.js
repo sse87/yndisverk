@@ -51,7 +51,7 @@ const App = () => {
       <div className='container'>
         <h4>{greeting} <strong>{person.name}</strong>, today is <strong>{weekDays[date.getDay()]}</strong>.</h4>
         {todayIndex !== null ? (
-          <WeekMenu personSelection={person.selection} todayIndex={todayIndex} />
+          <WeekMenu person={person} todayIndex={todayIndex} />
         ) : (
           <h5>
             It's time to order from next week menu:
