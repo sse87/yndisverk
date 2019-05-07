@@ -18,16 +18,17 @@ const getDistributions = (people) => {
       else if (sel === 'c') stats[i] = { ...stats[i], c: (stats[i].c + 1), sum: (stats[i].sum + 1) }
       else if (sel === 'd') stats[i] = { ...stats[i], d: (stats[i].d + 1), sum: (stats[i].sum + 1) }
       else if (sel === 'e') stats[i] = { ...stats[i], e: (stats[i].e + 1), sum: (stats[i].sum + 1) }
-      else if (sel === null) stats[i] = { ...stats[i], null: (stats[i].null + 1), sum: (stats[i].sum + 1) }
     })
   })
 
   return stats
 }
 
+const isSelValid = (sel) => ['a', 'b', 'c', 'd', 'e'].includes(sel)
+
 export const addStats = (people, targetSel) => {
   const dist = getDistributions(people)
-  const statistics = targetSel.selection.map((sel, i) => sel === null ? dist[i].null / dist[i].sum : dist[i][sel] / dist[i].sum)
+  const statistics = targetSel.selection.map((sel, i) => isSelValid(sel) ? [(dist[i][sel] / dist[i].sum), dist[i][sel], dist[i].sum] : null)
   return { ...targetSel, statistics }
 }
 
@@ -80,3 +81,14 @@ export const renderPercentage = (x, digits = 2) => {
   if (isNaN(x) || x === null) return ''
   return `${Number.parseFloat(x * 100).toFixed(digits)}%`
 }
+
+// This is so code will be more readable
+export const boolWeekdays = (date) => ({
+  itsSun: date.getDay() === 0,
+  itsMon: date.getDay() === 1,
+  itsTue: date.getDay() === 2,
+  itsWed: date.getDay() === 3,
+  itsThu: date.getDay() === 4,
+  itsFri: date.getDay() === 5,
+  itsSat: date.getDay() === 6
+})

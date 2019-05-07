@@ -1,4 +1,13 @@
 
+export const expirationDate = '2019-05-10T23:59:59.999Z'
+
+export const dates = [
+  'Monday, May 6',
+  'Tuesday, May 7',
+  'Wednesday, May 8',
+  'Thursday, May 9'
+]
+
 export const menu = [
   {
     a: 'A. Bökuð ýsa með grilluðum paprikum, rótargrænmetisstöppu og salati. Nýtt',
@@ -54,12 +63,12 @@ export const people = [
   { id: '24', email: 'kthorri@gangverk.is', name: 'Kristinn Þorri', selection: ['b', 'a', 'a', 'a'] },
   { id: '25', email: 'lena@gangverk.is', name: 'Lena Marczynska', selection: ['a', 'd', 'b', 'b'] },
   { id: '26', email: 'ludvik@gangverk.is', name: 'Lúðvík Snær', selection: ['d', 'a', 'b', 'd'] },
-  { id: '27', email: 'matthias@gangverk.is', name: 'Matthías Sigurðsson', selection: ['null', 'a', 'a', 'null'] },
+  { id: '27', email: 'matthias@gangverk.is', name: 'Matthías Sigurðsson', selection: [null, 'a', 'a', null] },
   { id: '28', email: 'olafur@gangverk.is', name: 'Ólafur Jónsson', selection: ['b', 'a', 'a', 'b'] },
-  { id: '29', email: 'pall@gangverk.is', name: 'Páll Valmundsson', selection: ['a', 'a', 'a', 'null'] },
+  { id: '29', email: 'pall@gangverk.is', name: 'Páll Valmundsson', selection: ['a', 'a', 'a', null] },
   { id: '30', email: 'ragnheidur@gangverk.is', name: 'Ragnheiður Eik', selection: ['c', 'c', 'c', 'c'] },
   { id: '31', email: 'samjhana@gangverk.is', name: 'Samjhana', selection: ['d', 'a', 'd', 'd'] },
-  { id: '32', email: 'siddy@gangverk.is', name: 'Siddý Sigurðar', selection: ['d', 'b', 'null', 'a'] },
+  { id: '32', email: 'siddy@gangverk.is', name: 'Siddý Sigurðar', selection: ['d', 'b', null, 'a'] },
   { id: '33', email: 'sigridur@gangverk.is', name: 'Sigga Hrafnsdóttir', selection: ['a', 'd', 'e', 'c'] },
   { id: '34', email: 'solberg@gangverk.is', name: 'Slóbreg Bjraki', selection: ['d', 'd', 'd', 'd'] },
   { id: '35', email: 'steinar@gangverk.is', name: 'Steinar Þór', selection: ['b', 'e', 'e', 'e'] },
@@ -71,6 +80,6 @@ export const people = [
   { id: '41', email: 'sinna@gangverk.is', name: 'Sinna', selection: ['a', 'c', 'c', 'c'] },
   { id: '42', email: 'siggi@gangverk.is', name: 'Sigurður Snær', selection: ['a', 'b', 'a', 'b'] },
   { id: '43', email: 'kjasva@gangverk.is', name: 'Kjartan', selection: ['b', 'b', 'a', 'a'] },
-  { id: '44', email: '', name: 'Lauren', selection: ['null', 'a', 'b', 'd'] },
-  { id: '45', email: '', name: 'Michael', selection: ['null', 'null', 'null', 'a'] }
+  { id: '44', email: '', name: 'Lauren', selection: [null, 'a', 'b', 'd'] },
+  { id: '45', email: '', name: 'Michael', selection: [null, null, null, 'a'] }
 ]
