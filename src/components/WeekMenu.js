@@ -6,7 +6,7 @@ import TableBody from '@material-ui/core/TableBody'
 import TableRow from '@material-ui/core/TableRow'
 import TableCell from '@material-ui/core/TableCell'
 
-import { weekDays } from '../misc/constants'
+import { dates } from '../misc/data'
 import { renderPercentage } from '../misc/utilities'
 
 // Primary color from bootstrap
@@ -16,9 +16,10 @@ const bgSelStyle = { backgroundColor: '#b8daff' }
 const renderStats = (stats, i) => {
   if (!stats) return ''
   if (!stats[i]) return ''
+  if (!stats[i][0]) return ''
   // Don't render if the stats are 100%
-  if (stats[i] === 1) return ''
-  return renderPercentage(stats[i])
+  if (stats[i][0] === 1) return ''
+  return `${renderPercentage(stats[i][0])} (${stats[i][1]})`
 }
 
 const WeekMenu = ({ person, todayIndex }) => {
@@ -30,12 +31,12 @@ const WeekMenu = ({ person, todayIndex }) => {
           <TableBody>
             {person.selection.map((sel, i) => (
               <TableRow
-                key={sel}
+                key={`${i}${sel}`}
                 selected={todayIndex === i}
                 style={todayIndex === i ? bgSelStyle : {}}
               >
-                <TableCell>{weekDays[i + 1]}</TableCell>
-                <TableCell>{sel} {renderStats(person.statistics, i)}</TableCell>
+                <TableCell style={{ paddingRight: 0 }}>{dates[i]}</TableCell>
+                <TableCell padding='dense'>{sel} {renderStats(person.statistics, i)}</TableCell>
               </TableRow>
             ))}
           </TableBody>
@@ -51,7 +52,7 @@ WeekMenu.propTypes = {
     email: PropTypes.string,
     name: PropTypes.string,
     selection: PropTypes.arrayOf(PropTypes.string).isRequired,
-    statistics: PropTypes.arrayOf(PropTypes.number)
+    statistics: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.number))
   }),
   todayIndex: PropTypes.number.isRequired
 }
