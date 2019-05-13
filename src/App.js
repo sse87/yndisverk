@@ -8,7 +8,7 @@ import SignInPage from './pages/SignInPage'
 // Components
 import AppBar from './components/AppBar'
 import WeekMenu from './components/WeekMenu'
-import ExpirationMessage from './components/ExpirationMessage'
+// import ExpirationMessage from './components/ExpirationMessage'
 
 // Misc
 import useLocalStorage from './misc/useLocalStorage'
@@ -55,7 +55,12 @@ const App = () => {
     if (itsFri) return <h5>It's time to order from next week menu: <SpreadsheetsMenuLink /></h5>
     // If data is expired
     if (date.toISOString() > expirationDate) {
-      return <ExpirationMessage />
+      return (
+        <>
+          <h5>This web app is deprecated</h5>
+          <p>We have a new and better Matverk! Please head over to <a href='https://matverk-admin.gangverk.now.sh'>https://matverk-admin.gangverk.now.sh</a>, there you can order and view your week menu.</p>
+        </>
+      )
     }
     // Otherwise, it's someday from monday to thursday and has the newest data
     return <WeekMenu person={person} todayIndex={todayIndex} />
