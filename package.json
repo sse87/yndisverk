@@ -1,15 +1,15 @@
 {
   "name": "matverk",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "private": true,
   "homepage": "https://sse87.github.io/matverk",
   "dependencies": {
     "@material-ui/core": "^3.9.3",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.5.2",
     "classnames": "^2.2.6",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5",
-    "react-scripts": "2.1.8"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
