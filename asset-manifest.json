@@ -1,15 +1,25 @@
 {
-  "main.css": "/matverk/static/css/main.936b2ed4.chunk.css",
-  "main.js": "/matverk/static/js/main.22da879d.chunk.js",
-  "main.js.map": "/matverk/static/js/main.22da879d.chunk.js.map",
-  "runtime~main.js": "/matverk/static/js/runtime~main.bd13b066.js",
-  "runtime~main.js.map": "/matverk/static/js/runtime~main.bd13b066.js.map",
-  "static/css/2.60d99035.chunk.css": "/matverk/static/css/2.60d99035.chunk.css",
-  "static/js/2.7e7deb1b.chunk.js": "/matverk/static/js/2.7e7deb1b.chunk.js",
-  "static/js/2.7e7deb1b.chunk.js.map": "/matverk/static/js/2.7e7deb1b.chunk.js.map",
-  "index.html": "/matverk/index.html",
-  "precache-manifest.8cdc6cb89305b4327f28030c793fb2f6.js": "/matverk/precache-manifest.8cdc6cb89305b4327f28030c793fb2f6.js",
-  "service-worker.js": "/matverk/service-worker.js",
-  "static/css/2.60d99035.chunk.css.map": "/matverk/static/css/2.60d99035.chunk.css.map",
-  "static/css/main.936b2ed4.chunk.css.map": "/matverk/static/css/main.936b2ed4.chunk.css.map"
+  "files": {
+    "main.css": "/matverk/static/css/main.795991f2.chunk.css",
+    "main.js": "/matverk/static/js/main.1ec35e9c.chunk.js",
+    "main.js.map": "/matverk/static/js/main.1ec35e9c.chunk.js.map",
+    "runtime-main.js": "/matverk/static/js/runtime-main.67ad0ac3.js",
+    "runtime-main.js.map": "/matverk/static/js/runtime-main.67ad0ac3.js.map",
+    "static/css/2.afc36f9d.chunk.css": "/matverk/static/css/2.afc36f9d.chunk.css",
+    "static/js/2.a19ca332.chunk.js": "/matverk/static/js/2.a19ca332.chunk.js",
+    "static/js/2.a19ca332.chunk.js.map": "/matverk/static/js/2.a19ca332.chunk.js.map",
+    "index.html": "/matverk/index.html",
+    "precache-manifest.c3bf3c5594dd01f5d4d2e2dc2c78f3c7.js": "/matverk/precache-manifest.c3bf3c5594dd01f5d4d2e2dc2c78f3c7.js",
+    "service-worker.js": "/matverk/service-worker.js",
+    "static/css/2.afc36f9d.chunk.css.map": "/matverk/static/css/2.afc36f9d.chunk.css.map",
+    "static/css/main.795991f2.chunk.css.map": "/matverk/static/css/main.795991f2.chunk.css.map",
+    "static/js/2.a19ca332.chunk.js.LICENSE.txt": "/matverk/static/js/2.a19ca332.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.67ad0ac3.js",
+    "static/css/2.afc36f9d.chunk.css",
+    "static/js/2.a19ca332.chunk.js",
+    "static/css/main.795991f2.chunk.css",
+    "static/js/main.1ec35e9c.chunk.js"
+  ]
 }
